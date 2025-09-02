@@ -1227,10 +1227,30 @@
             <span>WhatsApp</span>
           </a>
         </div>
-       
+        <div class="col-4 text-center">
+          <a href="#" class="action-btn enquiry-btn" id="enquiryBtn">
+            <i class="icon-envelope"></i>
+            <span>Enquiry</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
   
+  <script>
+    // Handle Enquiry button click
+    document.getElementById('enquiryBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      // Scroll to the enquiry form in the hero section
+      document.querySelector('.hero-wrap').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+      // Optional: trigger the form to open if it's collapsible
+      const enquiryForm = document.querySelector('.enquiry-form');
+      if (enquiryForm) {
+        enquiryForm.classList.add('open');
+      }
+    });
+  </script>
 </body>
 </html>
