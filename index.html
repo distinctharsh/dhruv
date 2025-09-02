@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <button class="toggle-form-btn d-block d-md-none">Open Enquiry Form</button>
+        <button class="toggle-form-btn d-block d-md-none"><i class="icon-chat"></i></button>
       </div>
     </section>
 
@@ -1186,11 +1186,12 @@
     if (toggleBtn) {
       toggleBtn.addEventListener("click", function () {
         enquiryForm.classList.toggle("open");
-        toggleBtn.textContent = enquiryForm.classList.contains("open")
-          ? "Close Enquiry Form"
-          : "Open Enquiry Form";
+        toggleBtn.innerHTML = enquiryForm.classList.contains("open")
+          ? '<i class="icon-chat"></i>'
+          : '<i class="icon-chat"></i>';
       });
     }
+
   
     // Show/Hide button based on hero section visibility
     window.addEventListener("scroll", function () {
