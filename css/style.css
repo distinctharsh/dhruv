@@ -4519,6 +4519,28 @@ input[type="button"].btn-block {
     background-color: #1b1e21;
     border-color: #1b1e21; }
 
+.close-form-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  padding: 2px 8px;
+  line-height: 1;
+  transition: all 0.2s;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-form-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
 .close {
   float: right;
   font-size: 1.5rem;

@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <button class="toggle-form-btn d-block d-md-none"><i class="icon-chat"></i></button>
+        <!-- <button class="toggle-form-btn d-block d-md-none"><i class="icon-chat"></i></button> -->
       </div>
     </section>
 
@@ -1241,15 +1241,8 @@
     // Handle Enquiry button click
     document.getElementById('enquiryBtn').addEventListener('click', function(e) {
       e.preventDefault();
-      // Scroll to the enquiry form in the hero section
-      document.querySelector('.hero-wrap').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
-      // Optional: trigger the form to open if it's collapsible
-      const enquiryForm = document.querySelector('.enquiry-form');
-      if (enquiryForm) {
-        enquiryForm.classList.add('open');
-      }
+      // Open the modal
+      $('#enquiryFormModal').modal('show');
     });
   </script>
 </body>
