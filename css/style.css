@@ -10270,9 +10270,15 @@ textarea.form-control {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
- 
   display: flex;
   align-items: center;
+}
+
+/* Mobile-specific background image */
+@media (max-width: 767px) {
+  .hero-wrap {
+    background-image: url('../images/mb-back.jpg') !important;
+  }
 }
 
 /* Toggle button style */
