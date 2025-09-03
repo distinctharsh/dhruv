@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
+    <style>
+      @media (max-width: 767.98px) {
+        #about-section .img {
+          display: none !important;
+        }
+      }
+    </style>
 
     <link rel="stylesheet" href="css/ionicons.min.css">
     
@@ -89,10 +96,6 @@
                       <select class="form-control" name="loan_type" required>
                         <option value="">Select Loan Type</option>
                         <option value="new_home_loan">New Home Loan</option>
-                        <option value="home_construction">Home Construction Loan</option>
-                        <option value="home_extension">Home Extension Loan</option>
-                        <option value="home_improvement">Home Improvement Loan</option>
-                        <option value="plot_loan">Plot Loan</option>
                         <option value="loan_against_property">Loan Against Property</option>
                         <option value="home_loan_transfer">Home Loan Transfer</option>
                       </select>
@@ -631,10 +634,6 @@
             <select class="form-control" name="loan_type" required>
               <option value="" disabled selected>Select Loan Type</option>
               <option value="new_home_loan">New Home Loan</option>
-              <option value="home_construction">Home Construction Loan</option>
-              <option value="home_extension">Home Extension Loan</option>
-              <option value="home_improvement">Home Improvement Loan</option>
-              <option value="plot_loan">Plot Loan</option>
               <option value="loan_against_property">Loan Against Property</option>
               <option value="home_loan_transfer">Home Loan Transfer</option>
             </select>
@@ -663,26 +662,22 @@
 			</div>
 		</section>
 
-		<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb">
+		<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
     	<div class="container">
-    		<div class="row no-gutters d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
+    		<div class="row no-gutters">
+    			<div class="col-12 col-md-6 col-lg-5 d-flex order-2 order-md-1 d-none d-md-flex">
+    				<div class="img d-flex align-self-stretch w-100" style="min-height: 300px; background-image: url('images/about.jpg'); background-size: cover; background-position: center;">
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-7 px-lg-5 py-md-5">
-    				<div class="py-md-5">
-	    				<div class="row justify-content-start pb-3">
-			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+    			<div class="col-12 col-md-6 col-lg-7 px-3 px-lg-5 py-4 py-md-5 order-1 order-md-2">
+    				<div class="py-md-3 py-lg-5">
+	    				<div class="row justify-content-start">
+	          	<div class="col-12 heading-section ftco-animate p-3 p-lg-4">
 			            <h2 class="mb-4">About Crefin</h2>
-			            <p>Getting a loan shouldn’t feel like running in circles.
-                    That’s why at Crefin, we’ve simplified the process by partnering with all major Government & Private Banks and top NBFCs, so you don’t have to chase multiple lenders.
-                    With low interest rates, faster approvals, flexible repayments, and minimal paperwork, we make borrowing simple, transparent, and stress-free.
-                    Whether it’s for your home, business, or personal needs, we bring the right loan to your doorstep, without the hassle.
-                    Don’t wait for tomorrow, secure your loan today.
-                    </p>
-			           
-			            <p><a href="#" class="btn btn-primary py-3 px-4 open-enquiry-form">APPLY NOW</a></p>
+			            <p class="mb-4">Getting a loan shouldn't feel like running in circles. That's why at Crefin, we've simplified the process by partnering with all major Government & Private Banks and top NBFCs, so you don't have to chase multiple lenders.</p>
+            <p class="mb-4">With low interest rates, faster approvals, flexible repayments, and minimal paperwork, we make borrowing simple, transparent, and stress-free.</p>
+            <p class="mb-4">Whether it's for your home, business, or personal needs, we bring the right loan to your doorstep, without the hassle. Don't wait for tomorrow, secure your loan today.</p>
+            <p class="mt-4"><a href="#" class="btn btn-primary py-3 px-4 open-enquiry-form">APPLY NOW</a></p>
 			          </div>
 			        </div>
 		        </div>
@@ -865,10 +860,23 @@
                 <input type="text" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <select class="form-control" name="loan_type" required>
+                  <option value="">Select Loan Type</option>
+                  <option value="new_home_loan">New Home Loan</option>
+                  <option value="loan_against_property">Loan Against Property</option>
+                  <option value="home_loan_transfer">Home Loan Transfer</option>
+                </select>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <select class="form-control" name="loan_amount" required>
+                  <option value="">Select Loan Amount</option>
+                  <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
+                  <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
+                  <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
+                  <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
+                  <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
+                  <option value="100+">Above ₹1 Cr</option>
+                </select>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
