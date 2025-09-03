@@ -77,30 +77,39 @@
                 <form action="#" method="post" class="appointment-form">
                   <div class="row">
                     <div class="col-12 mb-3">
-                      <input type="text" class="form-control" placeholder="Your Name" required>
+                      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="col-12 mb-3">
-                      <input type="tel" class="form-control" placeholder="Mobile Number" required>
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="col-12 mb-3">
-                      <select class="form-control" id="loan-type" required>
+                      <input type="tel" class="form-control" name="phone" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <select class="form-control" name="loan_type" required>
                         <option value="">Select Loan Type</option>
                         <option value="new_home_loan">New Home Loan</option>
+                        <option value="home_construction">Home Construction Loan</option>
+                        <option value="home_extension">Home Extension Loan</option>
+                        <option value="home_improvement">Home Improvement Loan</option>
+                        <option value="plot_loan">Plot Loan</option>
                         <option value="loan_against_property">Loan Against Property</option>
                         <option value="home_loan_transfer">Home Loan Transfer</option>
                       </select>
                     </div>
                     <div class="col-12 mb-3">
-                      <select class="form-control" id="loan-amount" required>
+                      <select class="form-control" name="loan_amount" required>
                         <option value="">Select Loan Amount</option>
+                        <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
                         <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
                         <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
                         <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
-                        <option value="50-100">₹50 Lakhs to ₹1 Cr+</option>
+                        <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
+                        <option value="100+">Above ₹1 Cr</option>
                       </select>
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="btn-submit">Submit</button>
+                      <button type="submit" class="btn-submit">Get Free Quote</button>
                     </div>
                   </div>
                 </form>
@@ -610,29 +619,39 @@
       <div class="modal-body">
         <form id="enquiryForm" class="appointment-form">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Your Email" required>
+            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" placeholder="Phone Number" required>
+            <input type="tel" class="form-control" name="phone" placeholder="Mobile Number" required>
           </div>
           <div class="form-group">
-            <select class="form-control" required>
+            <select class="form-control" name="loan_type" required>
               <option value="" disabled selected>Select Loan Type</option>
-              <option>Home Purchase Loan</option>
-              <option>Home Construction Loan</option>
-              <option>Home Extension Loan</option>
-              <option>Home Improvement Loan</option>
-              <option>Plot Loan</option>
+              <option value="new_home_loan">New Home Loan</option>
+              <option value="home_construction">Home Construction Loan</option>
+              <option value="home_extension">Home Extension Loan</option>
+              <option value="home_improvement">Home Improvement Loan</option>
+              <option value="plot_loan">Plot Loan</option>
+              <option value="loan_against_property">Loan Against Property</option>
+              <option value="home_loan_transfer">Home Loan Transfer</option>
             </select>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" placeholder="Required Loan Amount (₹)" required>
+            <select class="form-control" name="loan_amount" required>
+              <option value="" disabled selected>Select Loan Amount</option>
+              <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
+              <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
+              <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
+              <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
+              <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
+              <option value="100+">Above ₹1 Cr</option>
+            </select>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary py-3 px-4">Submit Enquiry</button>
+            <button type="submit" class="btn btn-primary py-3 px-4 w-100">Get Free Quote</button>
           </div>
         </form>
       </div>
