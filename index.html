@@ -79,41 +79,53 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-5 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <div class="enquiry-form-wrapper">
-              <div class="enquiry-form">
-                <h4>Quick Enquiry</h4>
-                <form action="#" method="post" class="appointment-form">
-                  <div class="row">
-                    <div class="col-12 mb-3">
-                      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+              <div class="enquiry-form p-3 rounded-3 shadow-sm" style="background: rgba(255, 255, 255, 0.95);">
+              <h4 class="h5 mb-3 text-center text-primary fw-bold">Quick Enquiry</h4>
+              <form action="#" method="post" class="appointment-form">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-0">
+                      <input type="text" class="form-control form-control-sm border-0 border-bottom border-2 border-light bg-light rounded-1" name="name" placeholder="Your Name" required>
                     </div>
-                    <div class="col-12 mb-3">
-                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-0">
+                      <input type="email" class="form-control form-control-sm border-0 border-bottom border-2 border-light bg-light rounded-1" name="email" placeholder="Email Address" required>
                     </div>
-                    <div class="col-12 mb-3">
-                      <input type="tel" class="form-control" name="phone" placeholder="Mobile Number" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-0">
+                      <input type="tel" class="form-control form-control-sm border-0 border-bottom border-2 border-light bg-light rounded-1" name="phone" placeholder="Mobile Number" required>
                     </div>
-                    <div class="col-12 mb-3">
-                      <select class="form-control" name="loan_type" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-0">
+                      <select class="form-select form-select-sm border-0 border-bottom border-2 border-light bg-light rounded-1" name="loan_type" required>
                         <option value="">Select Loan Type</option>
-                        <option value="new_home_loan">New Home Loan</option>
+                        <option value="new_home_loan">Home Loan</option>
                         <option value="loan_against_property">Loan Against Property</option>
-                        <option value="home_loan_transfer">Home Loan Transfer</option>
+                        <option value="home_loan_transfer">Balance Transfer</option>
                       </select>
                     </div>
-                    <div class="col-12 mb-3">
-                      <select class="form-control" name="loan_amount" required>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-0">
+                      <select class="form-select form-select-sm border-0 border-bottom border-2 border-light bg-light rounded-1" name="loan_amount" required>
                         <option value="">Select Loan Amount</option>
-                        <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
-                        <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
-                        <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
-                        <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
-                        <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
+                        <option value="5-10">₹5-10 Lakhs</option>
+                        <option value="10-20">₹10-20 Lakhs</option>
+                        <option value="20-30">₹20-30 Lakhs</option>
+                        <option value="30-50">₹30-50 Lakhs</option>
+                        <option value="50-100">₹50L-1 Cr</option>
                         <option value="100+">Above ₹1 Cr</option>
                       </select>
                     </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn-submit">Get Free Quote</button>
-                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary w-100 fw-bold py-2 rounded-pill border-0" style="background: linear-gradient(45deg, #1e3c72, #2a5298);">
+                      Get Free Quote <i class="icon-arrow-right ml-2"></i>
+                    </button>
+                  </div>
                   </div>
                 </form>
               </div>
