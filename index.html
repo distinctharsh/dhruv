@@ -164,7 +164,7 @@
             <div class="enquiry-form-wrapper">
               <div class="enquiry-form p-3 rounded-3 shadow-sm" style="background: rgba(255, 255, 255, 0.95);">
               <h4 class="h5 mb-3 text-center text-primary fw-bold">Quick Enquiry</h4>
-             <form action="#" method="post" class="appointment-form pr-3">
+             <form action="#" method="post" class="formSubmitone" class="appointment-form pr-3">
               <div class="row g-3">
                 
                 <div class="col-md-6">
@@ -714,7 +714,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form id="enquiryForm" class="appointment-form">
+        <form id="enquiryForm"  method="post" class="formSubmitone" class="appointment-form">
           <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="Your Name" required>
           </div>
@@ -946,7 +946,7 @@
 
         <div class="row block-9">
           <div class="col-md-12 order-md-last d-flex ftco-animate">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form action="#"  method="post" class="formSubmitone" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
               </div>
@@ -1337,5 +1337,39 @@
       $('#enquiryFormModal').modal('show');
     });
   </script>
+
+
+
+ <script>
+    jQuery(".formSubmitone").on("submit", function (e) {
+      e.preventDefault();
+      $('#msgone').html('<div id="loader">Loading...</div>');
+
+      var formData = jQuery(this).serialize();
+
+      jQuery.ajax({
+        url: "https://script.google.com/macros/s/AKfycby79lQfd4KeMSAhBrOoG1G9aHMLWYmLioEXgXcylqmzmi0_QR-UQrlcawTSWs35QA/exec",
+        type: "post",
+        data: formData,
+        success: function (result) {
+          jQuery.ajax({
+            url: "send.php",
+            type: "post",
+            data: formData,
+            success: function (result) {
+              jQuery("#formSubmitone")[0].reset();
+              window.location.href = "thanks.php";
+            },
+          });
+        },
+        complete: function () {
+          jQuery("#loader").hide();
+        }
+      });
+    });
+  </script>
+
+
+
 </body>
 </html>
