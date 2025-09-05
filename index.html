@@ -168,35 +168,35 @@
               <div class="row g-3">
                 
                 <div class="col-md-6">
-                  <input type="text" class="form-control form-control-sm rounded-2" name="name" placeholder="Your Name" required>
+                  <input type="text" class="form-control form-control-sm rounded-2" id="Name" name="Name" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control form-control-sm rounded-2" name="email" placeholder="Email Address" required>
+                  <input type="email" class="form-control form-control-sm rounded-2" id="Email" name="Email" placeholder="Email Address" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="tel" class="form-control form-control-sm rounded-2" name="phone" placeholder="Mobile Number" required>
+                  <input type="tel" class="form-control form-control-sm rounded-2" id="Number" name="Number" placeholder="Mobile Number" required>
                 </div>
 
                 <div class="col-md-6">
-                  <select class="form-select form-select-sm rounded-2" name="loan_type" required>
+                  <select class="form-select form-select-sm rounded-2" id="LoanType" name="LoanType" required>
                     <option value="">Select Loan Type</option>
-                    <option value="new_home_loan">Home Loan</option>
-                    <option value="loan_against_property">Loan Against Property</option>
-                    <option value="home_loan_transfer">Balance Transfer</option>
+                    <option value="Home Loan">Home Loan</option>
+                    <option value="Loan Against Property">Loan Against Property</option>
+                    <option value="Balance Transfer">Balance Transfer</option>
                   </select>
                 </div>
 
                 <div class="col-12">
-                  <select class="form-select form-select-sm rounded-2" name="loan_amount" required>
+                  <select class="form-select form-select-sm rounded-2" id="LoanAmaount" name="LoanAmaount" required>
                     <option value="">Select Loan Amount</option>
-                    <option value="5-10">₹5-10 Lakhs</option>
-                    <option value="10-20">₹10-20 Lakhs</option>
-                    <option value="20-30">₹20-30 Lakhs</option>
-                    <option value="30-50">₹30-50 Lakhs</option>
-                    <option value="50-100">₹50L-1 Cr</option>
-                    <option value="100+">Above ₹1 Cr</option>
+                    <option value="₹5-10 Lakhs">₹5-10 Lakhs</option>
+                    <option value="₹10-20 Lakhs">₹10-20 Lakhs</option>
+                    <option value="₹20-30 Lakhs">₹20-30 Lakhs</option>
+                    <option value="₹30-50 Lakhs">₹30-50 Lakhs</option>
+                    <option value="₹50L-1 Cr">₹50L-1 Cr</option>
+                    <option value="Above ₹1 Cr">Above ₹1 Cr</option>
                   </select>
                 </div>
 
@@ -716,31 +716,31 @@
       <div class="modal-body">
         <form id="enquiryForm"  method="post" class="formSubmitone" class="appointment-form">
           <div class="form-group">
-            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+            <input type="email" class="form-control" id="Email" name="Email" placeholder="Email Address" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" name="phone" placeholder="Mobile Number" required>
+            <input type="tel" class="form-control" id="Number" name="Number" placeholder="Mobile Number" required>
           </div>
           <div class="form-group">
-            <select class="form-control" name="loan_type" required>
+            <select class="form-control" id="LoanType" name="LoanType" required>
               <option value="" disabled selected>Select Loan Type</option>
-              <option value="new_home_loan">New Home Loan</option>
-              <option value="loan_against_property">Loan Against Property</option>
-              <option value="home_loan_transfer">Home Loan Transfer</option>
+              <option value="Home Loan">Home Loan</option>
+                    <option value="Loan Against Property">Loan Against Property</option>
+                    <option value="Balance Transfer">Balance Transfer</option>
             </select>
           </div>
           <div class="form-group">
-            <select class="form-control" name="loan_amount" required>
+            <select class="form-control" id="LoanAmaount" name="LoanAmaount" required>
               <option value="" disabled selected>Select Loan Amount</option>
-              <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
-              <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
-              <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
-              <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
-              <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
-              <option value="100+">Above ₹1 Cr</option>
+             <option value="₹5-10 Lakhs">₹5-10 Lakhs</option>
+                    <option value="₹10-20 Lakhs">₹10-20 Lakhs</option>
+                    <option value="₹20-30 Lakhs">₹20-30 Lakhs</option>
+                    <option value="₹30-50 Lakhs">₹30-50 Lakhs</option>
+                    <option value="₹50L-1 Cr">₹50L-1 Cr</option>
+                    <option value="Above ₹1 Cr">Above ₹1 Cr</option>
             </select>
           </div>
           <div class="form-group">
@@ -946,30 +946,33 @@
 
         <div class="row block-9">
           <div class="col-md-12 order-md-last d-flex ftco-animate">
-            <form action="#"  method="post" class="formSubmitone" class="bg-light p-4 p-md-5 contact-form">
+            <form action="#"  method="post" class="formSubmitone" class="bg-light p-4 p-md-5 contact-form" style="width: 100%;">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" id="Name" name="Name" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="email" class="form-control" id="Email" name="Email" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <select class="form-control" name="loan_type" required>
+                <input type="number" class="form-control" id="Number" name="Number" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="LoanType" name="LoanType" required>
                   <option value="">Select Loan Type</option>
-                  <option value="new_home_loan">New Home Loan</option>
-                  <option value="loan_against_property">Loan Against Property</option>
-                  <option value="home_loan_transfer">Home Loan Transfer</option>
+                  <option value="Home Loan">Home Loan</option>
+                    <option value="Loan Against Property">Loan Against Property</option>
+                    <option value="Balance Transfer">Balance Transfer</option>
                 </select>
               </div>
               <div class="form-group">
-                <select class="form-control" name="loan_amount" required>
+                <select class="form-control" id="LoanAmaount" name="LoanAmaount" required>
                   <option value="">Select Loan Amount</option>
-                  <option value="5-10">₹5 Lakhs to ₹10 Lakhs</option>
-                  <option value="10-20">₹10 Lakhs to ₹20 Lakhs</option>
-                  <option value="20-30">₹20 Lakhs to ₹30 Lakhs</option>
-                  <option value="30-50">₹30 Lakhs to ₹50 Lakhs</option>
-                  <option value="50-100">₹50 Lakhs to ₹1 Cr</option>
-                  <option value="100+">Above ₹1 Cr</option>
+                  <option value="₹5-10 Lakhs">₹5-10 Lakhs</option>
+                    <option value="₹10-20 Lakhs">₹10-20 Lakhs</option>
+                    <option value="₹20-30 Lakhs">₹20-30 Lakhs</option>
+                    <option value="₹30-50 Lakhs">₹30-50 Lakhs</option>
+                    <option value="₹50L-1 Cr">₹50L-1 Cr</option>
+                    <option value="Above ₹1 Cr">Above ₹1 Cr</option>
                 </select>
               </div>
               <div class="form-group">
@@ -1348,7 +1351,7 @@
       var formData = jQuery(this).serialize();
 
       jQuery.ajax({
-        url: "https://script.google.com/macros/s/AKfycby79lQfd4KeMSAhBrOoG1G9aHMLWYmLioEXgXcylqmzmi0_QR-UQrlcawTSWs35QA/exec",
+        url: "https://script.google.com/macros/s/AKfycbzt0NJiziM6zlU5BEzet1DHcVxtWxv1sR921VQXkcp0foZ4tmY6X3XGoZtfq1TigdfywA/exec",
         type: "post",
         data: formData,
         success: function (result) {
@@ -1357,7 +1360,7 @@
             type: "post",
             data: formData,
             success: function (result) {
-              jQuery("#formSubmitone")[0].reset();
+              jQuery(".formSubmitone")[0].reset();
               window.location.href = "thanks.php";
             },
           });
